@@ -5,21 +5,21 @@ the idea is to create a basic single page scrolling app with lazyloader.
 You just need to create files in the frontend/Sections folder and the server will be the one to load it for you.
 
 filenames in the Sections directory must adhere to the format 
-`1_section.js`
+`1_section.js`.
 
-start with a number (this will sort the sections in the order that you like)
-separate using `_`
-filename must be the same as the classname
-a template is provided in creating sections
+start with a number (this will sort the sections in the order that you like).
+separate using `_`.
+filename must be the same as the classname.
+a template is provided in creating sections.
 
-styles are found in the App.css
+styles are found in the App.css.
 
-run the server and the frontend to start the application
+run the server and the frontend to start the application.
 
 enjoy!
 
 
-//TODO
--responsive layout
--CMS
--access props through lazyloading
+//TODO.
+-responsive layout.
+-CMS.
+-access props through lazyloading.
