@@ -1,49 +1,25 @@
-import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
-import Navigation from './Navigation';
-import Sections from './Sections';
-import { serverUrl } from './config';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      files: [],
-      tabs: []
-    };
-  }
-
-  componentDidMount = async () => {
-    try {
-      //get the filenames from the sections folder
-      const files = await axios({
-        method: 'get',
-        url: `${serverUrl}/`
-      });
-
-      //extract names from filenames
-      const trimmed = files.data.results.map(files => {
-        const filename = files.slice(0, -3);
-        const file = filename.split('_');
-        return file[1];
-      });
-
-      this.setState({ files: files.data.results, tabs: trimmed });
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  render() {
-    return (
-      <div className="App">
-        {Navigation(this.state.tabs)}
-        {Sections(this.state.files)}
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
-

@@ -9,49 +9,13 @@
   width: 100vw;
 }
 
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  position: fixed;
-  height: 10vh;
-  width: 100vw;
-  z-index: 99;
-  background-color: rgba(200, 200, 200, 0);
-}
-
-.tab-container {
-  flex: 3;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-content: center;
-}
-
 .logo {
   flex: 1;
   left: 0;
 }
 
-a.scrollButton {
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  padding: 1em;
-}
-
 .section-container.in-transition {
   transition: transform 900ms ease;
-}
-
-.onTop {
-  background-color: rgba(200, 200, 200, 0);
-  color: white;
-}
-
-.onScroll {
-  background-color: rgba(50, 90, 200, 0.85);
-  height: 7vh;
 }
 
 #BigTitle {
