@@ -1,3 +1,7 @@
+# **Discontinued**
+I created this before NextJS was a thing but nextjs supports this functionality now. This is just a memory of my old ideas.
+
+
 # express-react-spa
 
 Single Page Scrolling Using Express and React
